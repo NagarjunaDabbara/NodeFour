@@ -43,7 +43,7 @@ req({url: 'http://localhost:3001/temperature',
  })
 })
 app.get('/',function(req,res){
-    console.log(res );
+    res.send('welcome to heroku app')
 })
 
 app.get('/home',function(req,res){
