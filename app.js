@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const req = require('request')
 const moment = require('moment')
 console.log(moment().format('ddd , ha'));
+const port =process.env.PORT||3000;
 
 const app = express();
 
@@ -58,6 +59,6 @@ app.get('/student',function(req,res){
 })
 
 
-app.listen(3000,function(){
+app.listen(port,function(){
     console.log('our server is live on port 3000');
 }) 
